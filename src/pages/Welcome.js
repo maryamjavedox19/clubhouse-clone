@@ -1,5 +1,8 @@
 import react from 'react';
+// import style from "../style/welcome.module.css"
 import style from "../style/welcome.module.css"
+
+import { Link } from 'react-router-dom'; //allow us to navigate bw pages w/o having any kind of refresh
 
 
 
@@ -16,7 +19,7 @@ export default function Welcome() {
                 </p>
                 <p>Paul, Rohan & the Clubhouse team</p>
             </div>
-            {/* <div className={style.actionBtn}>
+            <div className={style.actionBtn}>
                 <Link
                     exact
                     to='/invite'
@@ -26,8 +29,7 @@ export default function Welcome() {
                     <img src='' alt='' />
                 </Link>
                 <Link>Have an invite text? Sign in</Link>
-            </div> */}
+            </div>
         </div>
     );
-
 }

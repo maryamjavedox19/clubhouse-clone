@@ -11,7 +11,8 @@ function App() {
     <BrowserRouter>
       <PlanLayout>
         <Welcome />
-      </PlanLayout></BrowserRouter>
+      </PlanLayout>
+    </BrowserRouter>
 
 
   );
