@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import style from '../style/PhoneConfirm.module.css'
+import style from '../style/phoneConfirm.module.css'
 import { Link } from "react-router-dom";
 
 
 export default function PhoneConfirmation() {
     const [value, setValue] = useState();
     return (
-        <div className={style.PhoneConfirmContainer}>
+        <div className={style.phoneConfirmContainer}>
             {/* <Link exact to="/" className={style.backBtn}>
                 <img src="/images/left.png" alt="" />
             </Link> */}
