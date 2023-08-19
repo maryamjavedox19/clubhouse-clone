@@ -37,9 +37,16 @@
     justify-content: center;
 }
 
+.actionBtn > a{
+    text-decoration: none;
+
+}
+
+
 .actionBtn > a:last-child {
     color: var(--btnBGColor);
     font-size: 0.875em;
     font-weight: 400;
     font-style: normal;
 }
+

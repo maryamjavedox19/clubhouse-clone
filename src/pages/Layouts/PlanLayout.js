@@ -9,4 +9,4 @@ function PlanLayout({ children }) {
     )
 }
 
-export default PlanLayout
+export default PlanLayout;

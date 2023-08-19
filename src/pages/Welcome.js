@@ -1,7 +1,5 @@
 import react from 'react';
-// import style from "../style/welcome.module.css"
 import style from "../style/welcome.module.css"
-
 import { Link } from 'react-router-dom'; //allow us to navigate bw pages w/o having any kind of refresh
 
 
@@ -9,7 +7,7 @@ import { Link } from 'react-router-dom'; //allow us to navigate bw pages w/o hav
 export default function Welcome() {
     return (
         <div className={style.WelcomeContainer}>
-            <h1>Welcome</h1>
+            <h1>Welcome!</h1>
             <div className={style.WelcomeInfo}>
                 <p>
                     We're working hard to get clubhouse ready for everyone! While we wrap up the finishing touches, we're adding people gradually to make sure nothing breaks.
@@ -19,14 +17,14 @@ export default function Welcome() {
                 </p>
                 <p>Paul, Rohan & the Clubhouse team</p>
             </div>
+
             <div className={style.actionBtn}>
                 <Link
                     exact
-                    to='/invite'
-                    className='primaryBtn d-flex align-items-center mb-3'
-                >
+                    to="/get_username"
+                    className='primaryBtn d-flex align-items-center mb-3'>
                     Get your username{" "}
-                    <img src='' alt='' />
+
                 </Link>
                 <Link>Have an invite text? Sign in</Link>
             </div>
