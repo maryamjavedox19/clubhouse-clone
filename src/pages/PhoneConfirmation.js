@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import style from "../style/phoneConfirm.module.css";
 import { Link } from "react-router-dom";
 import PhoneInput from "react-phone-number-input";
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 
 
