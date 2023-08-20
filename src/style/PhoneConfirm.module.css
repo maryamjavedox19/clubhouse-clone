@@ -32,3 +32,39 @@
     font-weight: 500;
 }
 
+.backBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.backBtn img {
+    width: 15px;
+}
+
+
+
+.notificationContainer .action_btn a {
+    display: inline-block;
+    width: 50%;
+    padding: 0.5em;
+    border-top: 1px solid #ccc;
+    color: var(--btnBGColor);
+}
+
+.notificationContainer .action_btn a:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.notificationContainer .hand_icon {
+    position: absolute;
+    bottom: -90px;
+    right: 30px;
+    width: 80px;
+}
+
+
+.next{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

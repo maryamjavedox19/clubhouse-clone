@@ -1,30 +1,38 @@
 import React, { useState } from "react";
-import style from '../style/phoneConfirm.module.css'
+import style from "../style/phoneConfirm.module.css";
 import { Link } from "react-router-dom";
+import PhoneInput from "react-phone-number-input";
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+
 
 
 export default function PhoneConfirmation() {
     const [value, setValue] = useState();
     return (
         <div className={style.phoneConfirmContainer}>
-            {/* <Link exact to="/" className={style.backBtn}>
+            <Link exact to="/" className={style.backBtn}>
                 <img src="/images/left.png" alt="" />
-            </Link> */}
+            </Link>
             <h1>Enter your phone</h1>
-            {/* <PhoneInput
+            <PhoneInput
                 international
-                defaultCountry="PK"
+                defaultCountry="US"
                 value={value}
                 onChange={setValue}
-            /> */}
+            />
             <p>
                 By entering your number, you're agreeing to our
                 <span> Terms of Services and Privacy Policy. </span>
                 Thanks
             </p>
-            {/* <Link exact to='/code_confirm' className='primaryBtn d-flex align-item-center'>
-                Next <img src="/images/rightt.png" alt="" className="ms-1" />
-            </Link> */}
+            <Link
+                exact
+                to="/code_confirm"
+                className="primaryBtn d-flex align-item-center"
+            >
+                Next >
+
+            </Link>
         </div>
     );
 }
