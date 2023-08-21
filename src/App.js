@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./pages/Welcome";
 import PlanLayout from "./pages/Layouts/PlanLayout";
@@ -29,7 +28,7 @@ function App() {
 
       <PlanLayout>
         <Routes>
-          <Route exact path="/" element={<Welcome />} />
+          <Route exact path="/" element={Welcome} />
           <Route exact path="/invite" element={<PhoneConfirmation />} />
           <Route exact path="/code_confirm" element={<CodeConfirm />} />
           <Route
@@ -42,12 +41,12 @@ function App() {
 
       <Routes>
         <Route>
-          exact path = {["/home", "/explore"]}
+          exact path = {["/home"]}
         </Route>
       </Routes>
       <AppLayout>
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/home" component={Home} />
         </Routes>
       </AppLayout>
     </BrowserRouter>

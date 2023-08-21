@@ -4,19 +4,18 @@ import data from "../data/dailyCard.json";
 
 export default function dailyInfoCard() {
     console.log(data);
-    return <h2>DAILY INFO</h2>
-    // <div className={style.dailyCard}>
-    //     {data.map((item) => (
-    //         //implicit return
-    //         <div>
-    //             <span className="">{item.time}</span> {/*item is declared but its value is never read*/}
-    //             <div>
-    //                 <span>{item.title}</span>
-    //                 <p>{item.description}</p>
-    //             </div>
-    //         </div>
-    //     ))}
-    // </div>
+    return (
+        <div className="style.dailyCard">
+            {data.map((item) => (
+                <div>
+                    <span className="">{item.time}</span>
+                    <p>{item.description}</p>
 
-
+                    <div>
+                        <span>{item.title}</span>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
 }
