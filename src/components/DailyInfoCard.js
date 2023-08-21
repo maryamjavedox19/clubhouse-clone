@@ -1,18 +1,17 @@
 import React from "react";
 import style from "../style/dailyInfoCard.module.css";
-import data from "../data/dailyCard.json";
+import data from "../data/dailyCard.json"
 
-export default function dailyInfoCard() {
+export default function DailyInfoCard() {
     console.log(data);
     return (
-        <div className="style.dailyCard">
+        <div className={style.dailyCard}>
             {data.map((item) => (
                 <div>
                     <span className="">{item.time}</span>
-                    <p>{item.description}</p>
-
                     <div>
-                        <span>{item.title}</span>
+                        <span className="">{item.title}</span>
+                        <p>{item.description}</p>
                     </div>
                 </div>
             ))}
