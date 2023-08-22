@@ -9,6 +9,7 @@ import AllowNotification from "./pages/AllowNotification";
 import AppLayout from "./pages/Layouts/AppLayout";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -41,12 +42,14 @@ function App() {
       </PlanLayout>
 
       <Routes>
-        <Route>exact path = {["/home", "/explore"]}</Route>
+        <Route>exact path = {["/home", "/explore", "/profile"]}</Route>
       </Routes>
       <AppLayout>
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/explore" element={<Explore />} />
+          <Route exact path="/profile" element={<Profile />} />
+
 
         </Routes>
       </AppLayout>

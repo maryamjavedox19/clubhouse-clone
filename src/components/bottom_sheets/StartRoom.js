@@ -4,11 +4,10 @@ import { FcGlobe } from "react-icons/fc";
 
 export default function StartRoom(props) {
   const [room, setRoom] = useState("open");
-
   return (
     <>
       <div className={style.switch_Line}></div>
-      <div className="text-right">
+      <div className="text-left">
         <button className={style.addTopicBtn}>+ Add a topic</button>
       </div>
       <div className={style.selectRoom}>
@@ -21,6 +20,7 @@ export default function StartRoom(props) {
           </div>
           Open
         </button>
+
         <button
           className={room == "social" ? style.active : ""}
           onClick={() => setRoom("social")}
@@ -30,32 +30,35 @@ export default function StartRoom(props) {
           </div>
           Social
         </button>
+
         <button
-          className={room == "close" ? style.active : ""}
-          onClick={() => setRoom("close")}
+          className={room == "closed" ? style.active : ""}
+          onClick={() => setRoom("closed")}
         >
           <div>
             <FcGlobe />
           </div>
-          Close
+          Closed
         </button>
       </div>
+
       <p>
-        Start a room{" "}
+        Start a room {""}
         <span>
           {room == "closed"
             ? "for people I choose"
             : room == "social"
-              ? "with poeple I follow"
+              ? "with people I follow"
               : "open to everyone"}
         </span>
       </p>
+
       <div className="text-center">
         <button
           className={style.letGoBtn}
           onClick={() => {
             props.setSheetCreateRoom(true);
-            props.setSheetVisible(false);
+            props.setSheetVisible(true);
           }}
         >
           🎉Let's go

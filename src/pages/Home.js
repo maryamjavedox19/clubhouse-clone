@@ -18,7 +18,6 @@ export default function Home() {
 
     return (
         <>
-            {/* either display the loader or do nothing */}
             {loaderVisibility ? (
                 <div
                     style={{
